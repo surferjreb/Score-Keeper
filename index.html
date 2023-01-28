@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Score Keeper</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-4">
+                    <div class="card " >
+                        <div class="text-center">
+                            <img src="images/vecteezy_table-tennis-racket-ball-and-net-on-table-tennis-table-close_6089844_683.jpg" class="card-img-top" alt="Table Tennis">
+                            <footer class="ref" id="ref1">
+                                <p><a href="https://www.vecteezy.com/free-photos">Free Stock photos by Vecteezy</a></p>
+                            </footer>
+                        </div>
+                        <div class="card-body text-center align-items-center">
+                          <p class="card-title display-6">Table Tennis</p>
+                          <h4 class="card-title"><em><strong>Score Tracker</strong></em></h4>
+                          <div class="row" id="score">
+                            <div class="col">
+                                <label for="player1Display">Player1</label>
+                                <p id="player1Display">0</p>
+                            </div>
+                            <div class="col align-self-center">
+                                <p>Vs</p>
+                            </div>
+                            <div class="col">
+                                <label for="player2Display">Player2</label>
+                                <p id="player2Display">0</p>
+                            </div>
+                          </div>
+                          <div class="row justify-content-center" id="highScoreSelect">
+                            <div class="col-sm-6 text-end">
+                                <label for="highest">Play To:</label>
+                            </div>
+                            <div class="col-sm-4">
+                                <select name="highScore" id="highest">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="25">20</option>
+                                </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div id="assist" class="col">
+                                <p>Use the buttons below to keep score.</p>
+                            </div>
+                          </div>
+                          <div class="row g-0" id="btnBar">
+                            <div class="col">
+                              <button class="btn btn-success" id="p1Scored" value="p1">Player 1</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-light btn-outline-dark btn-sm" value="clear" >Clear</button>
+                            </div>
+                            <div class="col">
+                              <button class="btn btn-primary" id="p2Scored" value="p2">Player 2</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+
+            
+        </div>
+        <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js" async defer></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
