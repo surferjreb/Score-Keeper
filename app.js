@@ -17,8 +17,9 @@ btnBar.addEventListener('click', function (evt) {
     let score1 = parseInt(p1ScoreDisplay.textContent);
     let score2 = parseInt(p2ScoreDisplay.textContent);
        
-    if(winner !== ''){
+    if(winner !== '' && evt.target.value !== 'clear'){
         alert('Please clear the game board...');
+        return;
     }
 
     switch(evt.target.value){
